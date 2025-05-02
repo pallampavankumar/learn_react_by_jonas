@@ -142,3 +142,61 @@ function getBooks() {
 function getBook(id) {
   return data.find((d) => d.id === id);
 }
+
+//optional chaining
+// function getReviewsCount(book){
+//   const goodreads=book.reviews.goodreads.reviewsCount;
+//   const librarything=book.reviews.librarything?.reviewsCount;
+//   return goodreads+librarything;
+// }
+
+// console.log(getReviewsCount(getBook(3)));
+
+
+// const obj={a:"aaa",b:{c:"ccc"}}
+// console.log(obj.a)
+// console.log(obj.b)
+// console.log(obj.b.c)
+// console.log(obj.c?.c??"ccc") 
+
+//map method
+
+// const newArray=[1,2,3,4].map(el=>el*2);
+// console.log(newArray)
+
+// const books=data.map(book=>book.title);
+// console.log(books)
+// const books1=data.map(book=>(
+//  {title : book.title,
+//     author : book.author
+//   }
+// ));
+// console.log(books1)
+
+// //filter
+
+// const filterdArray=[3,4,5,6].filter(el=>el%2==0)
+// console.log(filterdArray)
+
+// //reduce method
+
+// const reducedArray=[1,2,3,4].reduce((acc,ele)=>acc+ele,0)
+// console.log(reducedArray)
+
+// //sort method
+// const arr=[4,52,5,3,6];
+// // arr.sort((a,b)=>a-b);//it will change the original array
+// // console.log(arr)
+// const marray=arr.slice().sort((a,b)=>a-b)
+// console.log(arr)
+// console.log(marray)
+
+// fetch("https://jsonplaceholder.typicode.com/todos").then((pr)=>pr.json()).then(data=>console.log(data));
+// console.log("pavan")
+
+async function fun(params) {
+  return 45;
+}
+
+const ans=fun("pavan")
+console.log(ans)
