@@ -1,9 +1,9 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Product from "./Product";
-import Pricing from "./Pricing";
-import HomePage from "./HomePage";
-import PageNotFound from "./PageNotFound";
+import Product from "./pages/Product";
+import Pricing from "././pages/Pricing";
+import HomePage from "././pages/HomePage";
+import PageNotFound from "././pages/PageNotFound";
 
 function App() {
   return <BrowserRouter>
